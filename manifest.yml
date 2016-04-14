@@ -1,0 +1,9 @@
+---
+applications:
+- name: LaurensLovelyLandscapes
+  buildpack: python_buildpack
+  memory: 256M
+  instances: 1
+  host: LaurensLovelyLandscapes-${random-word}
+  path: .
+  command: python wsgi.py
